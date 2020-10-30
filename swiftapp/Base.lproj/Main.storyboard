@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tm1-Oc-gZY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="I8s-6R-DIx">
+            <objects>
+                <tabBarController id="Tm1-Oc-gZY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j8N-Fr-9hj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemIndigoColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="85Z-ve-E3Z" kind="relationship" relationship="viewControllers" id="uOW-Ac-fQ9"/>
+                        <segue destination="Yxv-4i-4u3" kind="relationship" relationship="viewControllers" id="t3J-ZN-bf2"/>
+                        <segue destination="a7H-H6-1mR" kind="relationship" relationship="viewControllers" id="4Sz-XN-g4n"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Im1-Gk-wvn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="142"/>
+        </scene>
+        <!--TabA-->
+        <scene sceneID="FOF-Yd-V62">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabA" id="85Z-ve-E3Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="star.fill" catalog="system" id="Ji5-XM-qOH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljg-ec-urz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="117"/>
+        </scene>
+        <!--TabB-->
+        <scene sceneID="G7X-u5-YsO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabB" id="Yxv-4i-4u3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="bolt.circle.fill" catalog="system" id="45L-0i-7I2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hA-7l-JFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="167"/>
+        </scene>
+        <!--TabC-->
+        <scene sceneID="xLe-Is-Xfy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabC" id="a7H-H6-1mR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tv.fill" catalog="system" id="SW0-d3-VwQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lfe-JH-Hk0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="221"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bolt.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="tv.fill" catalog="system" width="128" height="97"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

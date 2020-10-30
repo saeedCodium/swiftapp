@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rpa-zB-Pdo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TabC View Controller-->
+        <scene sceneID="gc2-0N-yh6">
+            <objects>
+                <viewController id="Rpa-zB-Pdo" customClass="TabCViewController" customModule="swiftapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J0F-qD-XWh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acc-kJ-JHd" customClass="GalleryView" customModule="swiftapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="acc-kJ-JHd" secondAttribute="height" multiplier="1:1" id="k8E-wg-wtN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8FX-KB-YQi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="acc-kJ-JHd" firstAttribute="centerX" secondItem="8FX-KB-YQi" secondAttribute="centerX" id="9nl-mT-KkK"/>
+                            <constraint firstItem="acc-kJ-JHd" firstAttribute="centerX" secondItem="J0F-qD-XWh" secondAttribute="centerX" id="FY0-xf-jZH"/>
+                            <constraint firstItem="acc-kJ-JHd" firstAttribute="centerY" secondItem="J0F-qD-XWh" secondAttribute="centerY" id="VLe-cT-WUj"/>
+                            <constraint firstItem="acc-kJ-JHd" firstAttribute="width" secondItem="J0F-qD-XWh" secondAttribute="width" multiplier="1:1" id="f7o-nB-aXe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tv.fill" catalog="system" id="MAT-pe-Zcq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="listView" destination="acc-kJ-JHd" id="wcr-O5-JSn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4f-TV-NnP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tv.fill" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
